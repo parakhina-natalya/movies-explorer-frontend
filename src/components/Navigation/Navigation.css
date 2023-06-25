@@ -1,0 +1,14 @@
+.account {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+
+.account__image {
+  width: 26px;
+  height: 30px;
+  background-color: #f9f9f9;
+  padding: 8px 7.25px;
+  border-radius: 4px;
+  box-sizing: border-box;
+}

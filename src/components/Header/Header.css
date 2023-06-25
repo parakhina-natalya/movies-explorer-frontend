@@ -1,0 +1,149 @@
+.header {
+  padding: 0 30px;
+  height: 74px;
+  display: flex;
+}
+
+@media screen and (max-width: 450px) {
+  .header {
+    padding: 0 14px;
+  }
+}
+
+.header__container {
+  margin: 0 auto;
+  max-width: 1140px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+@media screen and (max-width: 450px) {
+  .header__container {
+    max-width: 292px;
+  }
+}
+
+.header__nav {
+  margin: auto 0;
+  display: flex;
+  align-items: center;
+}
+
+.header__nav_welcome {
+  gap: 30px;
+}
+
+@media screen and (max-width: 450px) {
+  .header__nav_welcome {
+    gap: 14px;
+  }
+}
+
+.header__nav_movies {
+  gap: 50px;
+}
+
+@media screen and (max-width: 770px) {
+  .header__nav_movies {
+    display: none;
+  }
+}
+
+.header__links {
+  display: flex;
+  gap: 20px;
+}
+
+.header__link {
+  font-family: 'Inter', Arial, sans-serif;
+  font-style: normal;
+  text-decoration: none;
+  transition: opacity .2s;
+  color: #000000;
+}
+
+.header__link-welcome {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33;
+}
+
+.header__link-movies {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+}
+
+.header__link_none {
+  display: none;
+}
+
+.header__link-account {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.header__link-movies_active {
+  font-weight: 500;
+}
+
+.header__link:hover {
+  opacity: 0.7;
+}
+
+.header__link_button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: black;
+  color: #fff;
+  border-radius: 3px;
+  width: 76px;
+  height: 32px;
+  transition: opacity .2s;
+}
+
+@media screen and (max-width: 450px) {
+  .header__link_button {
+    width: 54px;
+    height: 26px;
+  }
+}
+
+.header__link_button:hover {
+  opacity: 0.8;
+}
+
+.hamburger {
+  display: flex;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 771px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+.hamburger__container {
+  display: flex;
+  flex-direction: column;
+  gap: 6.5px;
+  height: 20.5px;
+  width: 22px;
+  transition: all 10s ease-in 0;
+}
+
+.hamburger__line {
+  display: block;
+  height: 2.5px;
+  width: 22px;
+  background-color: black;
+  transition: all 0.5s ease-in;
+}
