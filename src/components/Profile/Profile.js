@@ -29,19 +29,19 @@ function Profile(props) {
         </div>
 
         <div className="profile__footer">
-          {!props.isEditOpen ?
+          {!props.isEditOpen ? (
             <div className="profile__links">
               <span className="profile__link profile__link_el_edit" onClick={props.onEdit}>Редактировать</span>
               <span className="profile__link profile__link_el_exit" onClick={props.onSignOut}>Выйти из аккаунта</span>
             </div>
-            :
+          ) : (
             <div className="profile__button">
               <Error />
               <Button
                 button="Сохранить">
               </Button>
             </div>
-          }
+          )}
         </div>
       </section>
     </>

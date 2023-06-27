@@ -70,6 +70,7 @@
   text-decoration: none;
   display: flex;
   justify-content: center;
+  transition: opacity .2s;
 }
 
 @media screen and (max-width: 450px) {
@@ -77,4 +78,8 @@
     font-size: 12px;
     line-height: 1.25;
   }
+}
+
+.not-found__link_to-main:hover {
+  opacity: 0.8;
 }

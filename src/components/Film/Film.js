@@ -22,12 +22,12 @@ function Film(props) {
       <div className="film__information">
         <div className="film__info-box">
           <p className="film__name"> {props.film.nameRU} </p>
-          {!props.save ?
+          {!props.save ? (
             <button className={`film__button film__button-like ${Like && "film__button-like_active"}`}
               onClick={toggleClassLike} type="button"></button>
-            :
+          ) : (
             <button className="film__button film__button-del" type="button"></button>
-          }
+          )}
         </div>
 
         <span className="film__duration">{movieDuration(props.film.duration)}</span>

@@ -123,6 +123,12 @@
   display: flex;
   margin-right: 8px;
   cursor: pointer;
+  border: none;
+  background: transparent;
+  width: 40px;
+  height: 43px;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (min-width: 771px) {

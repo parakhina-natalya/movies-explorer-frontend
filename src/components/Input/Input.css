@@ -32,6 +32,14 @@
   }
 }
 
+.input_type_error  {
+  border-left: 1px solid red; /* красная рамка для некорректных данных */
+}
+
+/* .input:valid {
+  border-left: 1px solid green; 
+} */
+
 .input::-webkit-input-placeholder {
   font-family: 'Inter', Arial, sans-serif;
   font-style: normal;

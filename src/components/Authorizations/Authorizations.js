@@ -17,7 +17,7 @@ function Authorizations(props) {
         <div className="authorizations__wrapp">
           <Logo />
           <h1 className="authorizations__title">{`${props.title}`}</h1>
-          <form className="form">
+          <form className="form" novalidate>
             {props.children}
           </form>
         </div>

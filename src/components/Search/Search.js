@@ -8,13 +8,13 @@ function Search() {
         <input className="search__input" name="search" placeholder="Фильм" type="search" />
         <button className="search__button" type="submit">Поиск</button>
       </form>
-      <div className="toggle">
+      <form className="toggle">
         <label className="checkbox">
           <input className="checkbox__input" type="checkbox" />
           <span className="checkbox__switch"></span>
         </label>
         <span className="toggle__text">Короткометражки</span>
-      </div>
+      </form>
     </section>
   );
 }

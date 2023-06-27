@@ -12,6 +12,7 @@ function Login(props) {
         linkText="Регистрация"
         button="Войти"
         onClick={props.onloggedIn}>
+
         <Input
           name="email"
           label="E-mail"
@@ -20,6 +21,7 @@ function Login(props) {
           minLength="2"
           maxLength="30">
         </Input>
+        
         <Input
           name="password"
           label="Пароль"

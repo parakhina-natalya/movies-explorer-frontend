@@ -56,12 +56,13 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-bottom: 15px;
+  padding-bottom: 210px;
 }
 
 @media screen and (max-width: 450px) {
   .profile__form {
     width: 260px;
+    padding-bottom: 379px;
   }
 }
 
@@ -86,7 +87,6 @@
 }
 
 .profile__input {
-  outline: none;
   border: none;
   text-align: right;
   width: 60%;
