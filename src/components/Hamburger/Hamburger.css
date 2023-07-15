@@ -1,4 +1,4 @@
-.popup {
+.hamburger {
   display: flex;
   box-sizing: border-box;
   justify-content: right;
@@ -15,13 +15,13 @@
   z-index: 10;
 }
 
-.popup_opened {
+.hamburger_opened {
   visibility: visible;
   opacity: 1;
   transition: visibility 0, opacity 0.3s linear;
 }
 
-.popup__container {
+.hamburger__container {
   width: 520px;
   height: 100vh;
   box-sizing: border-box;
@@ -35,7 +35,7 @@
   position: relative;
 }
 
-.popup__button-close {
+.hamburger__button-close {
   position: absolute;
   top: 29px;
   right: 29px;
@@ -48,18 +48,18 @@
   height: 22px;
 }
 
-.popup__button-close:hover {
+.hamburger__button-close:hover {
   opacity: 0.8;
 }
 
-.popup__links {
+.hamburger__links {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 22px;
 }
 
-.popup__link {
+.hamburger__link {
   font-family: 'Inter', Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -70,16 +70,16 @@
   transition: opacity .2s;
 }
 
-.popup__link:hover {
+.hamburger__link:hover {
   opacity: 0.8;
 }
 
-.popup__link-movies_active {
+.hamburger__link-movies_active {
   font-weight: 500;
 }
 
 @media screen and (max-width: 770px) {
-  .popup__link-movies_active {
+  .hamburger__link-movies_active {
     border-bottom: 2px solid #0a0808;
   }
 }
