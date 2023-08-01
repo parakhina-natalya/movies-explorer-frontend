@@ -89,8 +89,10 @@
 .profile__input {
   border: none;
   text-align: right;
-  width: 60%;
+  width: 80%;
+  background-color: #ffffff;
 }
+
 
 .profile__links {
   display: flex;
@@ -123,7 +125,7 @@
   color: #FF4062;
 }
 
-.profile__error {
+/* .profile__error {
   font-family: 'Inter', Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -131,10 +133,9 @@
   line-height: 1.2;
   color: #ff4062;
   height: 12px;
-}
+} */
 
-.profile__error_el_name {
-  padding-bottom: 5px;
+.profile__line {
   border-bottom: 1px solid #e8e8e8;
 }
 

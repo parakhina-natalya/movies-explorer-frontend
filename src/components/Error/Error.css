@@ -1,13 +1,21 @@
 .error {
   font-family: 'Inter', Arial, sans-serif;
   font-style: normal;
-  font-weight: 400;
-  font-size: 11px;
-  line-height: 1.18;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
   color: #ff4062;
+  width: 396px;
   height: 14px;
   margin: 0;
   padding-bottom: 20px;
   display: flex;
+  align-items: center;
   justify-content: center;
+}
+
+@media screen and (max-width: 450px) {
+  .error {
+    width: 260px;
+  }
 }

@@ -1,8 +1,8 @@
 import './Error.css';
 
-function Error() {
+function Error(props) {
   return (
-    <span className="error"></span>
+    <span className="error">{props.submitError}</span>
   );
 }
 

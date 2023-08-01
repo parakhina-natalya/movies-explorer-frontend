@@ -14,30 +14,46 @@
   margin: 0 auto;
 }
 
-.films {
+.movies-list {
   padding: 68px 0 10px;
   margin: 0;
   list-style: none;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 37px;
 }
 
-@media screen and (max-width: 850px) {
-  .films {
+@media screen and (max-width: 770px) {
+  .movies-list {
     padding-bottom: 30px;
     column-gap: 30px;
     row-gap: 28px;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media screen and (max-width: 450px) {
-  .films {
+@media screen and (max-width: 480px) {
+  .movies-list {
+    display: flex;
+    flex-direction: column;
     gap: 14px;
     padding: 40px 0 26px;
+    align-items: center;
   }
+}
+
+.gallery__erorr {
+  display: flex;
+  justify-content: center;
+  font-family: 'Inter', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #ff4062;
 }
 
 .gallery__button-more {

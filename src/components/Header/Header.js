@@ -1,13 +1,11 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../Logo/Logo';
-import Menu from '../Menu/Menu.js';
+import Hamburger from '../Hamburger/Hamburger.js';
 import Navigation from '../Navigation/Navigation';
 import './Header.css';
 
 
 function Header(props) {
-
   return (
     <header className="header">
       {!props.loggedIn ? (
@@ -21,11 +19,11 @@ function Header(props) {
       ) : (
         <div className="header__container">
           <Logo />
-          <button className="hamburger" onClick={props.onHamburger}>
-            <div className="hamburger__container" >
-              <span className="hamburger__line"></span>
-              <span className="hamburger__line"></span>
-              <span className="hamburger__line"></span>
+          <button className="header__hamburger-button" onClick={props.onHamburger}>
+            <div className="header__hamburger-container" >
+              <span className="header__hamburger-line"></span>
+              <span className="header__hamburger-line"></span>
+              <span className="header__hamburger-line"></span>
             </div>
           </button>
           {!props.isOpen ? (
@@ -33,7 +31,7 @@ function Header(props) {
               <Navigation className="header"></Navigation>
             </div>
           ) : (
-            <Menu isOpen={props.isOpen}
+            <Hamburger isOpen={props.isOpen}
               onClose={props.onClose} />
           )}
         </div>)
