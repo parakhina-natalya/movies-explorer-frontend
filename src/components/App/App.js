@@ -185,19 +185,20 @@ function App() {
   return (<CurrentUserContext.Provider value={currentUser}>
     <div className="page">
       <Routes>
-        <Route path="/signup"
-          element={<Register
-            handleRegister={handleRegister}
-            setIsLoading={setIsLoading}
-          />} />
+        <Route path="/signup" element={<ProtectedRouteElement
+          element={Register}
+          handleRegister={handleRegister}
+          setIsLoading={setIsLoading}
+          loggedIn={!loggedIn}
+        />} />
 
-        <Route path="/signin"
-          element={<Login
-            handleAuthorize={handleAuthorize}
-            setIsLoading={setIsLoading}
-            jwtErrorStatus={jwtErrorStatus}
-            loggedIn={loggedIn}
-          />} />
+        <Route path="/signin" element={<ProtectedRouteElement
+          element={Login}
+          handleAuthorize={handleAuthorize}
+          setIsLoading={setIsLoading}
+          jwtErrorStatus={jwtErrorStatus}
+          loggedIn={!loggedIn}
+        />} />
 
         <Route path="/"
           element={<Landing

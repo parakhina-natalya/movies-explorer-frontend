@@ -14,7 +14,7 @@ function PageNotFound() {
         </div>
         <button className="not-found__link_to-main" type="button" onClick={goBack}>Назад</button>
       </div>
-    </section >
+    </section>
   );
 }
 
